@@ -1,4 +1,6 @@
 import data from './data';
+import "./index.css";
+
 const root = document.querySelector('#app')
 
 function renderItem(item) {
