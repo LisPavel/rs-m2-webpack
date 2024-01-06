@@ -4,7 +4,8 @@ module.exports = {
     context: path.resolve(__dirname, "src"),
     entry: "./index.js",
     output: {
-        filename: "bundle.js",
-        path: path.resolve(__dirname, "dist")
+        filename: "[name].[contenthash].bundle.js",
+        path: path.resolve(__dirname, "dist"),
+        clean: true
     }
 }
