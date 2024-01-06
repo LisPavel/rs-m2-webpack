@@ -1,0 +1,16 @@
+{
+  "name": "rs-m2-webpack",
+  "version": "1.0.0",
+  "description": "wepback studying",
+  "private": true,
+  "scripts": {
+    "start": "npx webpack --mode development",
+    "build": "npx webpack --mode production"
+  },
+  "author": "pavell",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
