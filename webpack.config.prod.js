@@ -10,5 +10,16 @@ module.exports = merge(commonCfg, {
   optimization: {
     minimize: true,
     minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+    splitChunks: {
+      cacheGroups: {
+        default: false,
+        vendors: false,
+        vendor: {
+          chunks: "all",
+          name: "vendor",
+          test: /node_modules/,
+        },
+      },
+    },
   },
 });
