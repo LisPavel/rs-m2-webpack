@@ -1,4 +1,7 @@
 const { merge } = require("webpack-merge");
 const commonCfg = require("./webpack.config.common");
 
-module.exports = merge(commonCfg, { mode: "production" });
+module.exports = merge(commonCfg, {
+  mode: "production",
+  devtool: "source-map",
+});
